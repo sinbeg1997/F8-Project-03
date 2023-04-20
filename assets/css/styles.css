@@ -19,6 +19,15 @@ body {
 a {
   text-decoration: none;
 }
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .container {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -130,6 +139,7 @@ a {
 
 .logo__brand {
   display: block;
+  font-family: "Sora", sans-serif;
   font-size: 1.8em;
   font-weight: 400;
   color: #fff;
@@ -702,4 +712,105 @@ a {
   max-width: 617px;
   margin: 18px auto 38px;
   font-size: 1.6rem;
+}
+
+.footer {
+  margin-bottom: 500px;
+  padding: 100px 0;
+  background: #10375c;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+  column-gap: 78px;
+}
+
+.footer__desc {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #a9b3bb;
+}
+
+.footer__heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #ffffff;
+}
+
+.footer__list {
+  margin-bottom: 28px;
+}
+
+.footer__link {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #a9b3bb;
+  white-space: nowrap;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__social {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 28px;
+}
+
+.footer__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: #2e80ce;
+  background: #fff;
+  transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+  background: #2e80ce;
+  color: #fff;
+}
+
+.footer-form {
+  display: flex;
+  margin-top: 10px;
+  column-gap: 12px;
+}
+
+.footer-form__input {
+  width: 212px;
+  height: 46px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid #406181;
+  border-radius: 4px;
+  background: transparent;
+}
+
+.footer-form__input::placeholder {
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #9ca8b1;
+}
+
+.footer-form__submit {
+  --height: 46px;
+  min-width: 108px;
+  height: 46px;
+  font-weight: 600;
+  border-radius: 4px;
 }
